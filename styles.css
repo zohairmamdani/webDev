@@ -11,6 +11,15 @@
   --max-width: 1120px;
   --radius: 14px;
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #1d4ed8;
+  --primary-dark: #1e40af;
+  --border: #e2e8f0;
+  --max-width: 1100px;
+  --radius: 14px;
 }
 
 * {
@@ -23,6 +32,8 @@ body {
   color: var(--text);
   background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
   line-height: 1.65;
+  background: var(--bg);
+  line-height: 1.6;
 }
 
 .container {
@@ -40,6 +51,14 @@ body {
   position: sticky;
   top: 0;
   z-index: 30;
+  width: min(780px, 100%);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
 }
 
 .nav-wrap {
@@ -55,6 +74,14 @@ body {
   color: #fff;
   text-decoration: none;
   letter-spacing: 0.02em;
+  padding: 0.9rem 0;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .nav-list {
@@ -70,6 +97,9 @@ body {
   color: #f1f1f1;
   font-weight: 600;
   padding: 0.35rem 0.55rem;
+  color: var(--muted);
+  font-weight: 500;
+  padding: 0.35rem 0.5rem;
   border-radius: 8px;
 }
 
@@ -77,6 +107,8 @@ body {
 .nav-list a.active {
   color: #111;
   background: var(--accent);
+  color: var(--text);
+  background: #eaf1ff;
 }
 
 .hero {
@@ -92,6 +124,8 @@ body {
   color: var(--primary);
   font-weight: 800;
   font-size: 0.84rem;
+  font-weight: 600;
+  font-size: 0.85rem;
 }
 
 h1 {
@@ -127,6 +161,11 @@ h2 {
 .grid-3,
 .grid-2,
 .grid-4 {
+  padding: 3rem 0;
+}
+
+.grid-3,
+.grid-2 {
   display: grid;
   gap: 1rem;
 }
@@ -182,6 +221,15 @@ h2 {
   margin: 0.35rem 0 0;
 }
 
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.service-card {
+  min-height: 170px;
+}
+
 .cta-row {
   display: flex;
   gap: 0.75rem;
@@ -196,6 +244,8 @@ h2 {
   border-radius: 10px;
   padding: 0.72rem 1.05rem;
   font-weight: 700;
+  padding: 0.68rem 1rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -216,6 +266,13 @@ h2 {
 .site-footer {
   border-top: 2px solid #1f1f1f;
   background: #111;
+  color: var(--text);
+  background: #e2e8f0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
   margin-top: 2rem;
 }
 
@@ -231,6 +288,7 @@ h2 {
 .footer-wrap a {
   color: var(--accent);
   text-decoration: none;
+  color: var(--muted);
 }
 
 .contact-layout {
@@ -249,6 +307,7 @@ h2 {
 
 .quote-form label {
   font-weight: 700;
+  font-weight: 600;
 }
 
 .quote-form input,
@@ -257,6 +316,7 @@ h2 {
   font: inherit;
   padding: 0.65rem 0.7rem;
   border: 1px solid #c7c7c7;
+  border: 1px solid #cbd5e1;
   border-radius: 10px;
   background: #fff;
 }
@@ -297,6 +357,12 @@ h2 {
   .grid-3,
   .grid-2,
   .grid-4 {
+@media (max-width: 860px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
     grid-template-columns: 1fr;
   }
 
@@ -310,4 +376,19 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.form-note {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.contact-list a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
 }
