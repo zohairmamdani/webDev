@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NUR Metals | Contact</title>
   <meta name="description" content="Contact NUR Metals to request a quote for recycling and metal brokerage services." />
+  <title>Business Name | Contact</title>
+  <meta name="description" content="Contact us to ask questions or request a quote." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">NUR Metals</a>
+      <a class="brand" href="index.html">Business Name</a>
       <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -30,6 +33,12 @@
         <ul class="contact-list">
           <li><strong>Email:</strong> <a href="mailto:contact@nurmetals.com">contact@nurmetals.com</a></li>
           <li><strong>Service Area:</strong> Houston, TX, United States</li>
+        <h1>Contact Us</h1>
+        <p class="lead">Have a question or need pricing? Fill out the quote form and we’ll follow up soon.</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> (000) 000-0000</li>
+          <li><strong>Email:</strong> hello@businessname.com</li>
+          <li><strong>Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM</li>
         </ul>
       </section>
 
@@ -54,6 +63,29 @@
 
           <button class="btn btn-primary" type="submit">Submit Quote Request</button>
           <p class="form-note">Thank you! We will get back to you as soon as we can.</p>
+        <form action="#" method="post" class="quote-form">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" />
+
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="" selected disabled>Select an option</option>
+            <option value="service-one">Service One</option>
+            <option value="service-two">Service Two</option>
+            <option value="service-three">Service Three</option>
+            <option value="custom">Custom Request</option>
+          </select>
+
+          <label for="details">Project Details</label>
+          <textarea id="details" name="details" rows="5" placeholder="Tell us about your project" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Submit Quote Request</button>
         </form>
       </section>
     </div>
@@ -63,6 +95,8 @@
     <div class="container footer-wrap">
       <p>© <span id="year">2026</span> NUR Metals. All rights reserved.</p>
       <p><a href="mailto:contact@nurmetals.com">contact@nurmetals.com</a></p>
+      <p>© <span id="year">2026</span> Business Name. All rights reserved.</p>
+      <p><a href="contact.html">Get in touch</a></p>
     </div>
   </footer>
 </body>
