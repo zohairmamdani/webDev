@@ -61,18 +61,6 @@
     }, { passive: true });
   }
 
-  // Sticky quote CTA after hero
-  const stickyQuote = document.getElementById('stickyQuote');
-  const hero = document.querySelector('.hero');
-  if (stickyQuote && hero) {
-    const updateSticky = () => {
-      const trigger = hero.offsetHeight * 0.65;
-      stickyQuote.classList.toggle('visible', window.scrollY > trigger);
-    };
-    updateSticky();
-    window.addEventListener('scroll', updateSticky, { passive: true });
-  }
-
   // Testimonial slider
   const slides = document.getElementById('slides');
   const prev = document.getElementById('prev');
@@ -99,28 +87,4 @@
     goTo(0);
     auto();
   }
-
-  // FAQ accordion
-  document.querySelectorAll('.faq-question').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const open = item.classList.toggle('open');
-      btn.setAttribute('aria-expanded', String(open));
-    });
-  });
-
-  // Case-study modal
-  const modal = document.getElementById('caseModal');
-  const caseTitle = document.getElementById('caseTitle');
-  const caseSummary = document.getElementById('caseSummary');
-  const caseResult = document.getElementById('caseResult');
-  document.querySelectorAll('.case-trigger').forEach((card) => {
-    card.addEventListener('click', () => {
-      if (!modal) return;
-      caseTitle.textContent = card.dataset.title || 'Case Study';
-      caseSummary.textContent = card.dataset.summary || '';
-      caseResult.textContent = card.dataset.result || '';
-      modal.showModal();
-    });
-  });
 })();
