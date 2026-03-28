@@ -61,8 +61,6 @@
     }, { passive: true });
   }
 
-<<<<<<< HEAD
-=======
   // Sticky quote CTA after hero
   const stickyQuote = document.getElementById('stickyQuote');
   const hero = document.querySelector('.hero');
@@ -75,7 +73,7 @@
     window.addEventListener('scroll', updateSticky, { passive: true });
   }
 
->>>>>>> 22c0e0a (Replace results section with contact form UX enhancements)
+main
   // Testimonial slider
   const slides = document.getElementById('slides');
   const prev = document.getElementById('prev');
@@ -102,8 +100,6 @@
     goTo(0);
     auto();
   }
-<<<<<<< HEAD
-=======
 
 
   // Contact form UX states
@@ -166,5 +162,5 @@
       modal.showModal();
     });
   });
->>>>>>> 22c0e0a (Replace results section with contact form UX enhancements)
+main
 })();
