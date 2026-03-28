@@ -73,6 +73,7 @@
     window.addEventListener('scroll', updateSticky, { passive: true });
   }
 
+main
   // Testimonial slider
   const slides = document.getElementById('slides');
   const prev = document.getElementById('prev');
@@ -161,4 +162,5 @@
       modal.showModal();
     });
   });
+main
 })();
