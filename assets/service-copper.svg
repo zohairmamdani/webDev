@@ -1,0 +1,10 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Copper scrap inventory</title>
+  <desc id="desc">Illustration of bundled copper wire coils and sorted copper recovery stock.</desc>
+  <defs><linearGradient id="bg" x1="120" y1="40" x2="1100" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#61341E"/><stop offset="1" stop-color="#2A1B18"/></linearGradient></defs>
+  <rect width="1200" height="760" rx="24" fill="url(#bg)"/>
+  <g stroke="#D6854A" stroke-width="12" fill="none">
+    <circle cx="220" cy="240" r="118"/><circle cx="460" cy="220" r="132"/><circle cx="720" cy="250" r="128"/><circle cx="990" cy="230" r="120"/>
+    <circle cx="310" cy="520" r="142"/><circle cx="640" cy="520" r="170"/><circle cx="970" cy="520" r="146"/>
+  </g>
+</svg>
