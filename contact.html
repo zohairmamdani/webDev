@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- deploy refresh marker: 2026-03-28a -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Scrap Company | Contact</title>
+  <meta name="description" content="Contact The Scrap Company to request a quote for recycling and metal brokerage services." />
+  <link rel="stylesheet" href="styles.css?v=20260328a" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html?v=20260328a">
+        <img class="brand-logo" src="assets/logo.svg" alt="The Scrap Company logo" />
+        <span class="brand-text">The Scrap Company</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html?v=20260328a">Home</a></li>
+          <li><a href="about.html?v=20260328a">About</a></li>
+          <li><a href="services.html?v=20260328a">Services</a></li>
+          <li><a class="active" href="contact.html?v=20260328a">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid-2 contact-layout">
+      <section>
+        <h1>Contact The Scrap Company</h1>
+        <p class="lead">Request a quote and our team will respond as soon as possible.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:contact@thescrapcompany.com">contact@thescrapcompany.com</a></li>
+          <li><strong>Service Area:</strong> Houston, TX, United States</li>
+        </ul>
+
+        <article class="card">
+          <h2>Quote Request Tips</h2>
+          <p>For a faster response, include your material type, estimated volume, location, and preferred timeline.</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Request a Quote</h2>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite" hidden></p>
+        <form id="quoteForm" action="https://formsubmit.co/contact@thescrapcompany.com" method="post" class="quote-form" novalidate>
+          <input type="hidden" name="_subject" value="New Quote Request - The Scrap Company Website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://thescrapcompany.com/contact.html?v=20260328a&success=1" />
+
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" autocomplete="given-name" required />
+
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" autocomplete="family-name" required />
+
+          <label for="company">Company (optional)</label>
+          <input id="company" name="company" type="text" autocomplete="organization" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="^[0-9+()\-\s]{7,20}$" placeholder="(555) 555-5555" />
+          <p class="form-hint">Use digits and symbols like + ( ) - as needed.</p>
+
+          <label for="materialType">Primary Material Type</label>
+          <select id="materialType" name="materialType" required>
+            <option value="" selected disabled>Select a material</option>
+            <option value="copper">Copper</option>
+            <option value="aluminum">Aluminum</option>
+            <option value="mixed">Mixed Metals</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="estimatedVolume">Estimated Volume</label>
+          <select id="estimatedVolume" name="estimatedVolume" required>
+            <option value="" selected disabled>Select volume range</option>
+            <option value="small">Small (under 1 ton)</option>
+            <option value="medium">Medium (1-10 tons)</option>
+            <option value="large">Large (10+ tons)</option>
+            <option value="ongoing">Ongoing recurring loads</option>
+          </select>
+
+          <label for="timeline">Preferred Timeline (optional)</label>
+          <input id="timeline" name="timeline" type="text" placeholder="e.g., this week, within 30 days" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" minlength="20" placeholder="Tell us material type, estimated volume, location, and preferred timeline" required></textarea>
+          <p class="form-hint">Please include at least 20 characters so we can scope your request faster.</p>
+
+          <button class="btn btn-primary" type="submit">Submit Quote Request</button>
+          <p class="form-note">After submission, you'll be redirected back here with a confirmation.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year">2026</span> The Scrap Company. All rights reserved.</p>
+      <p><a href="mailto:contact@thescrapcompany.com">contact@thescrapcompany.com</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
