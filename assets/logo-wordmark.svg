@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 260" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" role="img" aria-labelledby="title desc">
   <title id="title">The Scrap Company wordmark logo</title>
   <desc id="desc">Bold stacked text logo reading The Scrap Company in dark ink.</desc>
-  <rect width="540" height="260" rx="16" fill="#ececec"/>
-  <g fill="#0c0222" font-family="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" font-weight="700" letter-spacing="1.5">
-    <text x="36" y="74" font-size="58">THE</text>
-    <text x="36" y="150" font-size="132">SCRAP</text>
-    <text x="280" y="236" font-size="72">COMPANY</text>
+  <rect width="600" height="320" rx="18" fill="#ececec"/>
+  <g fill="#0c0222" font-family="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" font-weight="700" letter-spacing="1.2">
+    <text x="42" y="92" font-size="64">THE</text>
+    <text x="42" y="198" font-size="160">SCRAP</text>
+    <text x="250" y="280" font-size="82">COMPANY</text>
   </g>
 </svg>
