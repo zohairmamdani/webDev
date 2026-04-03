@@ -60,7 +60,7 @@ body {
 }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.85rem 0; }
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--text); text-decoration: none; font-weight: 700; }
-.brand-logo { width: 170px; height: auto; border-radius: 0; display: block; object-fit: contain; }
+.brand-logo { width: 138px; height: auto; border-radius: 0; display: block; object-fit: contain; }
 .brand-text { white-space: nowrap; }
 
 .nav-list { list-style: none; display: flex; gap: 0.8rem; margin: 0; padding: 0; }
