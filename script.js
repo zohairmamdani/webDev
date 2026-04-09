@@ -73,34 +73,6 @@
     window.addEventListener('scroll', updateSticky, { passive: true });
   }
 
-  // Testimonial slider
-  const slides = document.getElementById('slides');
-  const prev = document.getElementById('prev');
-  const next = document.getElementById('next');
-  if (slides && prev && next) {
-    const total = slides.children.length;
-    let index = 0;
-    let timer;
-
-    const goTo = (i) => {
-      index = (i + total) % total;
-      slides.style.transform = `translateX(${-index * 100}%)`;
-    };
-
-    const auto = () => {
-      if (prefersReducedMotion) return;
-      clearInterval(timer);
-      timer = setInterval(() => goTo(index + 1), 4600);
-    };
-
-    prev.addEventListener('click', () => { goTo(index - 1); auto(); });
-    next.addEventListener('click', () => { goTo(index + 1); auto(); });
-
-    goTo(0);
-    auto();
-  }
-
-
   // Contact form UX states
   const quoteForm = document.getElementById('quoteForm');
   const formStatus = document.getElementById('formStatus');
@@ -109,7 +81,7 @@
     if (params.get('success') === '1') {
       formStatus.hidden = false;
       formStatus.className = 'form-status is-success';
-      formStatus.textContent = 'Thanks! Your quote request was submitted successfully. We will follow up as soon as possible.';
+      formStatus.textContent = 'Thanks! Your contact request was submitted successfully. We will follow up as soon as possible.';
     }
 
     quoteForm.addEventListener('submit', (event) => {
