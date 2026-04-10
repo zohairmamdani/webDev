@@ -37,7 +37,7 @@
 
         <article class="card">
           <h2>Contact Request Tips</h2>
-          <p>For a faster response, include your material type, estimated volume, location, and preferred timeline.</p>
+          <p>For a faster response, include your project location, contact details, and a short summary of what you need.</p>
         </article>
       </section>
 
@@ -65,29 +65,8 @@
           <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="^[0-9+()\-\s]{7,20}$" placeholder="(555) 555-5555" />
           <p class="form-hint">Use digits and symbols like + ( ) - as needed.</p>
 
-          <label for="materialType">Primary Material Type</label>
-          <select id="materialType" name="materialType" required>
-            <option value="" selected disabled>Select a material</option>
-            <option value="copper">Copper</option>
-            <option value="aluminum">Aluminum</option>
-            <option value="mixed">Mixed Metals</option>
-            <option value="other">Other</option>
-          </select>
-
-          <label for="estimatedVolume">Estimated Volume</label>
-          <select id="estimatedVolume" name="estimatedVolume" required>
-            <option value="" selected disabled>Select volume range</option>
-            <option value="small">Small (under 1 ton)</option>
-            <option value="medium">Medium (1-10 tons)</option>
-            <option value="large">Large (10+ tons)</option>
-            <option value="ongoing">Ongoing recurring loads</option>
-          </select>
-
-          <label for="timeline">Preferred Timeline (optional)</label>
-          <input id="timeline" name="timeline" type="text" placeholder="e.g., this week, within 30 days" />
-
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" minlength="20" placeholder="Tell us material type, estimated volume, location, and preferred timeline" required></textarea>
+          <textarea id="message" name="message" rows="5" minlength="20" placeholder="Tell us your location, project details, and the best way to follow up" required></textarea>
           <p class="form-hint">Please include at least 20 characters so we can scope your request faster.</p>
 
           <button class="btn btn-primary" type="submit">Submit Contact Request</button>
