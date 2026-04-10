@@ -134,6 +134,7 @@ h3 { margin: 0 0 0.45rem; font-size: 1.2rem; }
 
 .split { display: grid; grid-template-columns: 1.25fr 1fr; gap: 1.2rem; align-items: start; }
 .stack { display: grid; gap: 1rem; }
+.dual-card-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .card {
   padding: 1.2rem;
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
