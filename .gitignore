@@ -1,0 +1,6 @@
+# Prevent accidental binary logo commits that can break text-only PR tooling.
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+assets/*.webp
+assets/*.gif
