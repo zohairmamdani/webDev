@@ -1,0 +1,16 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mixed metal project materials</title>
+  <desc id="desc">Illustration of mixed metal bundles and sorted project loads.</desc>
+  <defs><linearGradient id="bg" x1="100" y1="40" x2="1110" y2="720" gradientUnits="userSpaceOnUse"><stop stop-color="#294360"/><stop offset="1" stop-color="#1A2437"/></linearGradient></defs>
+  <rect width="1200" height="760" rx="24" fill="url(#bg)"/>
+  <g fill="#C97F4C" fill-opacity="0.42">
+    <polygon points="120,170 250,90 380,170 380,320 250,400 120,320"/>
+    <polygon points="430,160 560,80 690,160 690,310 560,390 430,310"/>
+    <polygon points="740,170 870,90 1000,170 1000,320 870,400 740,320"/>
+  </g>
+  <g fill="#BACDE2" fill-opacity="0.5">
+    <polygon points="180,450 330,360 480,450 480,620 330,710 180,620"/>
+    <polygon points="520,430 670,340 820,430 820,600 670,690 520,600"/>
+    <polygon points="860,450 1010,360 1160,450 1160,620 1010,710 860,620"/>
+  </g>
+</svg>
